@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Url Shortener Microservice</title>
+</head>
+<body>
+    <div class="container mt-4 font-weight-bold">
+    <h1 class="text-center">Url Shortener Microservice</h1>
+    <form action="/api" method="POST" class="my-4 form-inline">
+        <legend>Paste an url here:</legend>
+        <label class="sr-only" for="longUrl">Url</label>
+        <input required class="form-control col mr-2" type="url" placeholder="example:  https://devlesson.com" name="longUrl" id="longUrl">
+        <button class="btn btn-success" type="submit">Shrink</button>
+    </form>
+
+    <table class="table table-striped table-bordered">
+        <legend>Check the output here:</legend>
+        <thead class="thead-dark">
+           <tr>
+                <th scope="col">Original_url</th>
+                <th scope="col">Short_url</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% output.forEach(doc =>{ %>
+            <tr class="font-weight-normal">
+                <td><a href="<%= doc.original_url %>" target="_blank"><%= doc.original_url %></a></td>
+                <td><a href="<%= doc.original_url %>" target="_blank"><%= doc.short_url %></a></td>
+            </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
