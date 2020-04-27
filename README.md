@@ -15,8 +15,8 @@
 4. If I refresh the web page, the table containing all the returned URLs and their shortened URLs will be removed from the web page, but not from the database.
 
 ## Examples:
-Input: 'https://devlesson.com'
+Input: 'https://devlessons.com'
 Output: 
-    original url: 'https://devlesson.com'  short url: `xhQ4u_`
+    original url: 'https://devlessons.com'  short url: `xhQ4u_`
 
 
