@@ -22,5 +22,5 @@
 original url: 'https://devlessons.com'  short url: `xhQ4u_`
 
 ## Deployment
-After the microservice development and its deployment on Heroku, feel free to access and test its functionality
-through the following link: 'https://url-shortener-appli.herokuapp.com/'
+After the microservice development and its deployment on Heroku are done, any one can test its functionality
+by accessing it through the following link: 'https://url-shortener-appli.herokuapp.com/'
